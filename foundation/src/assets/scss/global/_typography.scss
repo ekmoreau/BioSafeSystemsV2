@@ -1,0 +1,93 @@
+$secondary-font-family: basic-sans, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+
+.font--secondary {
+    font-family: $secondary-font-family;
+}
+a {
+    transition: color 0.25s ease-in-out;
+}
+.block {
+    display: block !important;
+}
+sup, sub {
+    font-size: 50%;
+}
+.lowercase {
+    text-transform: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+.lineheight--small {
+    line-height: 14px;
+}
+.small {
+    font-size: 85% !important;
+    line-height: 1.5;
+}
+.large {
+    font-size: 125% !important;
+}
+.header {
+    font-weight: 900;
+    &+ .subheader {
+        margin-bottom: rem-calc(16);
+    }
+}
+.header--xsmall {
+    font-size: rem-calc(21);
+}
+.header--small {
+    font-size: rem-calc(26);
+}
+.header--medium {
+    font-size: rem-calc(32);
+}
+.header--large {
+    font-size: rem-calc(38);
+}
+.header--xlarge {
+    font-size: rem-calc(46);
+}
+.header--xxlarge {
+    font-size: rem-calc(54);
+}
+.header--xxxlarge {
+    font-size: rem-calc(64);
+}
+
+.preheader,
+.subheader {
+    @extend .uppercase;
+    font-family: $secondary-font-family;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.preheader {
+    margin-bottom: rem-calc(24);
+    font-size: rem-calc(18);
+}
+
+.subheader {
+    font-size: rem-calc(15);
+}
+
+@include breakpoint(large) {
+  .list--2col {
+      column-count: 2;
+  }
+  .list--3col {
+      column-count: 3;
+  }
+  .list--4col {
+      column-count: 4;
+  }
+  .list--small {
+    font-size: rem-calc(16);
+  }
+  .list--large {
+    font-size: rem-calc(21);
+  }
+}

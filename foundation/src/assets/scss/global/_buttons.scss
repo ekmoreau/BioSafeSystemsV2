@@ -1,0 +1,145 @@
+
+.button-group {
+    .button {
+        font-size: rem-calc(14);
+    }
+}
+.button {
+    font-family: $secondary-font-family;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: rem-calc(14);
+    letter-spacing: 0.025rem;
+    .far {
+        padding-right: 6px;
+    }
+    &.hollow {
+        padding-top: calc(1.15em - 3px);
+        padding-bottom: calc(1.15em - 3px);
+    }
+    &.ghosted {
+        background-color: transparent !important;
+        color: $bio-blue;
+        padding-left: 0;
+        margin-bottom: 0;
+        &:hover, &:focus, &:active {
+            background-color: transparent;
+            color: #004493;
+        }
+        &.bio-white {
+            color: $white;
+            &:hover, &:focus, &:active {
+                color: $light-gray;
+            }
+        }
+    }
+    &.bio-teal {
+        color: $white;
+        &:hover, &:focus, &:active {
+            color: $white;
+        }
+    }
+    &.bio-white {
+        color: $bio-blue;
+        &:hover, &:focus, &:active {
+            background-color: $light-gray;
+            color: $bio-blue;
+        }
+    }
+    &.hollow {
+        &.bio-blue {
+            &:hover, &:focus, &:active {
+                background-color: $bio-blue;
+                border-color: $bio-blue;
+                color: $white;
+            }
+        }
+        &.bio-dark-blue {
+            &:hover, &:focus, &:active {
+                background-color: $bio-dark-blue;
+                border-color: $bio-dark-blue;
+                color: $white;
+            }
+        }
+        &.bio-teal {
+            &:hover, &:focus, &:active {
+                background-color: $bio-teal;
+                border-color: $bio-teal;
+                color: $white;
+            }
+        }
+        &.bio-cobalt {
+            &:hover, &:focus, &:active {
+                background-color: $bio-cobalt;
+                border-color: $bio-cobalt;
+                color: $white;
+            }
+        }
+        &.bio-white {
+            &:hover, &:focus, &:active {
+                background-color: $light-gray;
+                border-color: $light-gray;
+                color: $bio-blue;
+            }
+        }
+    }
+}
+
+.button--icon {
+    position: relative;
+    &:before {
+        content: none !important;
+    }
+
+    &:after {
+        @include fa-regular;
+        position: absolute;
+        opacity: 0;
+        top: 16px;
+        right: 18px;
+        transition: all 0.25s ease-in-out;
+        font-size: rem-calc(12);
+    }
+
+    &:hover {
+        &:after {
+            right: 8px;
+            opacity: 1;
+        }
+    }
+    &.tiny {
+        &:after {
+            top: 13px;
+            font-size: rem-calc(12);
+        }
+
+        &:hover {
+            &:after {
+                right: 2px;
+            }
+        }
+    }
+      &[target="_blank"] {
+        &:after {
+          @include fa-regular;
+          content: '\f35d';
+          font-size: rem-calc(10);
+          vertical-align: top;
+          margin-top: 1px;
+          right: 8px;
+          opacity: 1;
+        }
+        &:hover {
+            &:after {
+                transform: rotate(45deg);
+            }
+        }
+      }
+}
+
+.fa-long-arrow-right {
+    &:after {
+        content: '\f178';
+        top: 17px;
+    }
+}

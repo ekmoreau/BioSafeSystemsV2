@@ -1,0 +1,55 @@
+.on--white {
+    background-color: $white;
+}
+.on--blue {
+    background-color: $bio-blue;
+}
+.on--light-gray {
+    background-color: $light-gray;
+}
+.on--teal {
+    background-color: $bio-teal;
+}
+.on--dark-blue {
+    background-color: $bio-dark-blue;
+}
+.on--green {
+    background-color: $bio-green;
+}
+.on--cobalt {
+    background-color: $bio-cobalt;
+}
+.on--black {
+    background-color: $bio-black;
+}
+
+.scheme--light {
+    color: $bio-white;
+    a {
+        color: $bio-white;
+    }
+    [class^="header--"],
+    [class*=" header--"],
+    .preheader,
+    .subheader,
+    .far {
+        color: $bio-white;
+    }
+    input {
+        color: $white;
+    }
+}
+
+.scheme--dark {
+    color: $bio-black;
+    a {
+        color: $bio-black;
+    }
+    [class^="header--"],
+    [class*=" header--"],
+    .preheader,
+    .subheader,
+    .far {
+        color: $bio-dark-blue;
+    }
+}

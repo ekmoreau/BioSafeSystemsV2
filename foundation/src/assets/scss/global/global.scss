@@ -1,0 +1,136 @@
+@import "mixins";
+@import "typography";
+@import "navigation";
+@import "layout";
+@import "buttons";
+@import "backgrounds";
+@import "spacing";
+@import "margin";
+@import "forms";
+@import "list";
+
+.responsive-embed.widescreen,
+.flex-video.widescreen {
+    height: 100%;
+}
+
+.reveal {
+    padding: 0;
+    border: none;
+}
+
+.accordion {
+    .far {
+        margin-right: rem-calc(12);
+    }
+}
+
+.accordion-title[aria-expanded="false"] {
+    transition: all 0.25s ease-in-out;
+}
+
+.accordion-title[aria-expanded="true"] {
+    background-color: $light-gray;
+    transition: all 0.25s ease-in-out;
+}
+
+.slide {
+    height: 100%;
+}
+
+.slick-slider,
+.slick-track,
+.slick-list {
+    height: 100%;
+}
+
+.slick-slide>div {
+    height: 100%;
+}
+
+.grid-container {
+    &.compact {
+        max-width: 48rem;
+    }
+}
+
+.menu {
+    &.small {
+        li a {
+            padding: .35rem 1rem;
+        }
+    }
+}
+
+.siteFooter {
+    .grid-container:first-child {
+        padding-top: rem-calc(48);
+        padding-bottom: rem-calc(48);
+    }
+    input.search-field {
+    border: none;
+    background: 0 0;
+    background-color: rgba(255,255,255,.15);
+    }
+}
+
+.siteFooter .menu {
+    li a {
+        padding-left: 0;
+    }
+}
+
+.siteSearch {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.45s,
+    opacity 0.45s linear;
+    height: 0;
+    &.expanded {
+         visibility: visible;
+         opacity: 1;
+         transition-delay: 0s;
+         height: auto;
+    }
+}
+
+
+table {
+    font-size: 80%;
+}
+
+#cookie-law-info-bar {
+    box-shadow: none;
+}
+
+.news-hero__cell {
+    position: relative;
+    transition: all 0.25s ease-in-out;
+    overflow: hidden;
+    img {
+        &:after {
+              position: absolute;
+              top: 0; right: 0; bottom: 0; left: 0;
+              background-color: inherit;
+              content: '';
+              z-index: 999;
+        }
+    }
+    .preview-wrapper {
+        position: absolute;
+        bottom: -180px;
+        padding: rem-calc(24);
+        transition: all 0.25s ease-in-out;
+    }
+    &:hover {
+        .preview-wrapper {
+        transition: all 0.25s ease-in-out;
+        bottom: -25px;
+        }
+        img {
+            &:after {
+                background-color: rgba(0, 0, 0, 1);
+            }
+        }
+    }
+}

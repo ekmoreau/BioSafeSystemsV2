@@ -1,0 +1,24 @@
+hr.spacer {
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    &.spacer--xsmall {
+        margin: rem-calc(8 auto);
+    }
+    &.spacer--small {
+        margin: rem-calc(16 auto);
+    }
+    &.spacer--medium {
+        margin: rem-calc(32 auto);
+    }
+    &.spacer--large {
+        margin: rem-calc(48 auto);
+    }
+    &.spacer--xlarge {
+        margin: rem-calc(64 auto);
+    }
+    &.spacer--xxlarge {
+        margin: rem-calc(78 auto);
+    }
+    &.spacer--xxxlarge {
+        margin: rem-calc(96 auto);
+    }
+}

@@ -1,0 +1,21 @@
+.fa-border--rounded {
+    border-radius: 50%;
+}
+
+.fa-ul {
+    li {
+        margin-bottom: rem-calc(12);
+        padding-left: rem-calc(6);
+    }
+    .fa-border {
+        margin-top: -50%;
+        width: 30px;
+        height: 30px;
+        padding: rem-calc(8);
+        color: $white;
+        border: none;
+        &.bg--white {
+            color: $bio-blue;
+        }
+    }
+}

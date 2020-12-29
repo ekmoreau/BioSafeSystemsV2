@@ -1,0 +1,27 @@
+@mixin fa-regular {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 400;
+}
+
+@mixin fa-brands {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+}
+
+@mixin box-shadow {
+    box-shadow: 0px 10px 8px rgba(4, 36, 67, 0.1);
+}
+
+@mixin box-shadow--small {
+    box-shadow: 0px 5px 12px rgba(4, 36, 67, 0.1);
+}

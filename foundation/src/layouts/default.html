@@ -1,0 +1,181 @@
+{{!-- This is the base layout for your project, and will be used on every page unless specified. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link rel="stylesheet" href="https://use.typekit.net/cea4mep.css">
+
+  </head>
+<body>
+
+<div class="off-canvas position-right" id="offCanvas" data-off-canvas  data-content-scroll="false">
+
+  <!-- Close button -->
+  <button class="close-button" aria-label="Close menu" type="button" data-close>
+    <span aria-hidden="true">&times;</span>
+  </button>
+
+  <!-- Menu -->
+  <nav role="navigation" aria-label="Main Navigation">
+    <ul class="vertical menu drilldown" data-drilldown data-animate-height="true">
+      <li>
+        <a href="/products/">Products</a>
+        <ul class="menu vertical nested">
+          <li><a href="/industries/agriculture/">Agriculture</a></li>
+          <li><a href="/industries/agriculture/">Animal Health</a></li>
+          <li><a href="/industries/food-safety/">Food Safety</a></li>
+          <li><a href="/industries/lake-pond-municipal/">Lake, Pond & Municipal</a></li>
+          <li><a href="/industries/greenhouse-nursery/">Greenhouse &amp; Nursery</a></li>
+          <li><a href="/industries/lawn-care-arborists/">Turf &amp; Landscape</a></li>
+          <li><a href="/industries/meat-poultry-seafood/">Meat, Poultry &amp; Seafood</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="/industries/">Industries</a>
+        <ul class="menu vertical nested">
+          <li><a href="/industries/agriculture/">Agriculture</a></li>
+          <li><a href="/industries/agriculture/">Animal Health</a></li>
+          <li><a href="/industries/food-safety/">Food Safety</a></li>
+          <li><a href="/industries/lake-pond-municipal/">Lake, Pond & Municipal</a></li>
+          <li><a href="/industries/greenhouse-nursery/">Greenhouse &amp; Nursery</a></li>
+          <li><a href="/industries/lawn-care-arborists/">Turf &amp; Landscape</a></li>
+          <li><a href="/industries/meat-poultry-seafood/">Meat, Poultry &amp; Seafood</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Crops</a>
+        <ul class="menu vertical nested">
+          <li><a href="#">Item 1A</a></li>
+          <li><a href="#">Item 2A</a></li>
+          <li><a href="#">Item 3A</a></li>
+          <li><a href="#">Item 1A</a></li>
+          <li><a href="#">Item 2A</a></li>
+          <li><a href="#">Item 3A</a></li>
+          <li><a href="#">Item 1A</a></li>
+          <li><a href="#">Item 2A</a></li>
+          <li><a href="#">Item 3A</a></li>
+          <li><a href="#">Item 1A</a></li>
+          <li><a href="#">Item 2A</a></li>
+          <li><a href="#">Item 3A</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Disease / Pest</a>
+        <ul class="menu vertical nested">
+          <li><a href="#">Item 1A</a></li>
+          <li><a href="#">Item 2A</a></li>
+          <li><a href="#">Item 3A</a></li>
+          <li><a href="#">Item 1A</a></li>
+          <li><a href="#">Item 2A</a></li>
+          <li><a href="#">Item 3A</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Equipment &amp; Service</a></li>
+      <li><a href="#">Labels &amp; SDS</a></li>
+    </ul>
+  </nav>
+
+</div>
+
+<div class="off-canvas-content" data-off-canvas-content>
+
+  <nav class="top-bar on--dark-blue show-for-large" role="navigation" aria-label="Secondary Navigation">
+    <ul class="menu align-right">
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">News &amp; Events</a></li>
+      <li><a href="#">Videos</a></li>
+      <li><a href="#">Literature</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a data-toggle="siteSearch">Search <i class="far fa-fw fa-search" aria-hidden="true"></i> <span class="show-for-sr">Search BioSafeSystems.com</span></a></li>
+    </ul>
+  </nav>
+  
+
+  <header id="header" role="banner">
+    <div data-sticky-container>
+      <div class="sticky sticky-navigation" data-sticky data-options="marginTop:0;stickyOn:xlarge;">
+        <div class="header__logo">
+          <a href="/" class="logo-link" aria-label="BioSafe Systems Dot Com Homepage">Simply Sustainable. Always Effective.</a>
+        </div>
+        <nav class="header__navigation" role="navigation" aria-label="Main Navigation">
+          <ul id="primaryNavigation" class="dropdown menu align-right show-for-xlarge" data-dropdown-menu>
+            <li>
+              <a href="/products/">Products</a>
+              <ul class="menu menu--mega" style="width:640px;">
+                <div class="grid-x">
+                  <div class="cell auto">
+                    <ul class="menu vertical">
+                      <li><a href="#">Algaecides</a></li>
+                      <li><a href="#">Bactericides</a></li>
+                      <li><a href="#">Fungicides</a></li>
+                      <li><a href="#">Insecticides</a></li>
+                      <li><a href="#">Herbicides</a></li>
+                      <li><a href="#">Plant and Soil Health</a></li>
+                      <li><a href="#">Soil and Growing Media Treatment</a></li>
+                    </ul>
+                  </div>
+                  <div class="cell auto">
+                    <ul class="menu vertical">
+                      <li><a href="#">Irrigation Water Treatment</a></li>
+                      <li><a href="#">Chemigation</a></li>
+                      <li><a href="#">Water Quality</a></li>
+                      <li><a href="#">Sanitizers</a></li>
+                      <li><a href="#">Disinfectants</a></li>
+                      <li><a href="#">Foaming Agents</a></li>
+                      <li><a href="#">Cleaners</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <a href="#" class="button bio-blue expanded">Explore all products</a>
+              </ul>
+            </li>
+            <li>
+              <a href="/industries/">Industries</a>
+              <ul class="menu">
+                <li><a href="/industries/agriculture/">Agriculture</a></li>
+                <li><a href="/industries/agriculture/">Animal Health</a></li>
+                <li><a href="/industries/food-safety/">Food Safety</a></li>
+                <li><a href="/industries/lake-pond-municipal/">Lake, Pond & Municipal</a></li>
+                <li><a href="/industries/greenhouse-nursery/">Greenhouse &amp; Nursery</a></li>
+                <li><a href="/industries/lawn-care-arborists/">Turf &amp; Landscape</a></li>
+                <li><a href="/industries/meat-poultry-seafood/">Meat, Poultry &amp; Seafood</a></li>
+                <li><a href="/industries/meat-poultry-seafood/">Retail</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Equipment</a></li>
+            <li><a href="#">Smart Technology</a></li>
+            <li><a href="#">Labels &amp; SDS</a></li>
+            <li><a href="#">Where to Buy</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <button type="button" class="button hollow mb--none button--toggle float-right hide-for-xlarge" data-toggle="offCanvas"><span aria-hidden="true"><i class="far fa-bars"></i></span> Menu</button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <form id="siteSearch" class="siteSearch" data-toggler=".expanded">
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="cell">
+          <label><span class="show-for-sr">Search BioSafeSystems.com</span>
+            <input class="mt--xsmall mb--xsmall" type="text" placeholder="Search BioSafeSystems.com">
+          </label>
+        </div>
+      </div>
+    </div>
+  </form>
+  
+  {{> body}}
+  
+</div>
+
+<script src="{{root}}assets/js/app.js"></script>
+</body>
+</html>

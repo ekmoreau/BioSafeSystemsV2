@@ -1,0 +1,158 @@
+#primaryNavigation {
+    font-family: $secondary-font-family;
+    text-transform: uppercase;
+    font-size: rem-calc(14);
+    .is-dropdown-submenu.first-sub {
+        left: 0;
+        font-size: rem-calc(14);
+        @include box-shadow;
+        a:not(.button) {
+            width: 100%;
+            transition: padding 0.25s ease-in-out;
+            &:hover {
+                padding-left: rem-calc(24);
+                background-color: $light-gray;
+            }
+        }
+    }
+}
+
+.sticky-navigation {
+    background-color: $white;
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    @include box-shadow--small;
+    .dropdown.menu>li>a {
+        padding: 1.45rem 0.7rem;
+    }
+    &.is-stuck {
+        z-index: 915;
+        transition: all 0.25s ease-in-out;
+        padding: 0;
+        @include box-shadow;
+        background: rgb(7, 62, 115);
+        @include breakpoint(large) {
+            background: linear-gradient(115deg, rgba(7, 62, 115, 1) 0%, rgba(7, 62, 115, 1) 25%, rgba(4, 36, 67, 1) 25%, rgba(4, 36, 67, 1) 100%);
+        }
+        .dropdown.menu > li > a {
+            padding: 1rem 0.7rem;
+        }
+        .logo-link {
+            background-image: url(../svg/biosafe-logo_white.svg);
+            width: 230px;
+            height: 40px;
+            margin-top: rem-calc(11);
+        }
+
+        .dropdown.menu {
+            > li {
+                > a {
+                    color: $white;
+                    transition: all 0.25s ease-in-out;
+                    &:hover {
+                        color: $white;
+                        background-color: $bio-cobalt;
+                    }
+                }
+            }
+            .is-active {
+                > a {
+                    background-color: $bio-cobalt;
+                }
+            }
+        }
+        .is-dropdown-submenu-parent {
+            > a {
+                &:after {
+                    top: 26px;
+                }
+            }
+        }
+        .menu--callout {
+            a {
+                background-color: $bio-white;
+                color: $bio-blue !important;
+            }
+        }
+        .is-dropdown-submenu.first-sub {
+            margin-top: 0 !important;
+        }
+    }
+    .button--toggle {
+        margin-right: rem-calc(24)
+    }
+}
+
+.header__logo {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+.header__navigation {
+    order: 0;
+    flex: 1 1 auto;
+    align-self: auto;
+}
+
+.is-dropdown-submenu-parent {
+    >a {
+        padding-right: 32px !important;
+        &:after {
+            @include fa-regular;
+            content: "\f107";
+            font-size: rem-calc(14);
+            top: 34px;
+            right: 16px;
+        }
+    }
+    &.is-active {
+        >a {
+            &:after {
+                content: "\f068";
+            }
+        }
+    }
+}
+.logo-link {
+    position: relative;
+    display: block;
+    width: 230px;
+    height: 40px;
+    background-image: url(../svg/biosafe-logo.svg);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    margin-top: 28px;
+    margin-left: 30px;
+    @include breakpoint(xlarge) {
+        width: 170px;
+        height: 21px;
+    }
+}
+.top-bar {
+text-transform: uppercase;
+padding: 0;
+font-size: rem-calc(12);
+justify-content: flex-end;
+font-family: $secondary-font-family;
+a {
+    font-size: rem-calc(12);
+    font-weight: 600;
+    color: $gray;
+    &:hover {
+        color: $white;
+    }
+}
+.button {
+    margin-right: -1rem;
+    color: $white;
+}
+.far {
+    font-size: rem-calc(10);
+    margin-left: rem-calc(3);
+}
+}

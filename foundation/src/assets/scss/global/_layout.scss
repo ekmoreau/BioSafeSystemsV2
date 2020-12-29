@@ -1,0 +1,42 @@
+.grid-container--xsmall {
+    max-width: calc(68.75rem / 2.65);
+}
+.grid-container--small {
+    max-width: calc(68.75rem / 2);
+}
+.grid-container--medium {
+    max-width: calc(68.75rem / 1.65);
+}
+
+.article__header {
+    @include breakpoint(large) {
+        padding-bottom: 200px;
+    }
+}
+
+.article__container {
+    padding: rem-calc(36);
+    @include breakpoint(large) {
+        margin-top: -180px;
+    }
+}
+
+.article__body {
+    &.large-8 {
+        @include breakpoint(large) {
+            padding-right: 90px;
+        }
+    }
+}
+
+.press-footer {
+    clear: both;
+}
+
+.sidebar-right {
+    .large-8 {
+        @include breakpoint(large) {
+          padding-right: 12.5%;
+        }
+    }
+}

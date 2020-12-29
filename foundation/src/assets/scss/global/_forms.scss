@@ -1,0 +1,235 @@
+select {
+    line-height: 1;
+}
+
+.gform_body {
+    > ul {
+        list-style-type: none;
+        margin: 0;
+    }
+    .gfield_label {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $bio-dark-blue;
+    }
+    .hidden_label {
+        > label {
+            display: none;
+            visibility: hidden;
+        }
+        label {
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $bio-dark-blue;
+        }
+    }
+}
+.address-field {
+    > label {
+        visibility: hidden;
+        display: none;
+    }
+}
+.gfield_required {
+    display: inline-block;
+    padding: rem-calc(0 3);
+    color: red;
+}
+.gfield_checkbox {
+    list-style-type: none;
+    margin: 0;
+}
+
+//* Custom Checkboxes
+input[type="checkbox"],
+input[type="radio"] {
+    display: none;
+}
+[type='checkbox'] + label,
+[type='radio'] + label {
+    margin-left: 0;
+}
+input[type="checkbox"]+label:before,
+input[type="radio"]+label:before {
+    @include fa-regular;
+    font-size: rem-calc(10);
+    text-align: center;
+    transition: all 0.25s ease-in-out;
+}
+
+input[type="checkbox"]+label:before {
+    content: "\f0c8";
+    opacity: 0;
+
+}
+
+input[type="radio"]+label:before {
+    content: "\f00c";
+    opacity: 0;
+
+}
+
+input[type="checkbox"]+label:before,
+input[type="radio"]+label:before {
+    color: $bio-off-white;
+    width: 16px;
+    height: 16px;
+    outline: 3px solid $gray;
+    line-height: 16px;
+    margin-right: 10px;
+    opacity: 1;
+}
+
+input[type="checkbox"]+label:before {
+    content: "\f00c";
+}
+
+input[type="checkbox"]:checked+label:before {
+    content: "\f00c";
+    color: $bio-dark-blue;
+    text-shadow: none;
+    opacity: 1;
+}
+
+input[type="radio"]:checked+label:before {
+    content: "\f00c";
+    color: $bio-dark-blue;
+    text-shadow: none;
+    opacity: 1;
+}
+
+@include breakpoint(large) {
+    .gf_left_half,
+    .gf_right_half {
+        width: 50%;
+    }
+    .gf_left_third,
+    .gf_middle_third,
+    .gf_right_third {
+        width: 33.333333%;
+    }
+    .gf_left_third {
+        padding-right: 6px;
+        float: left;
+    }
+
+    .gf_middle_third {
+        padding-left: 10px;
+        padding-right: 10px;
+        float: left;
+    }
+    .gf_right_third {
+        padding-left: 6px;
+        float: right;
+    }
+    .gf_left_half {
+            width: 50%;
+        float: left;
+        padding-right: 8px;
+    }
+    .gf_right_half {
+            width: 50%;
+        float: right;
+        padding-left: 8px;
+    }
+    .gform_wrapper li.gfield.gf_list_3col ul.gfield_checkbox li,
+    .gform_wrapper li.gfield.gf_list_3col ul.gfield_radio li {
+        width: 33.3%;
+        display: -moz-inline-stack;
+        display: inline-block;
+        margin: 0 0 2px;
+        padding-right: 16px;
+        min-height: 28px;
+        vertical-align: top;
+        font-size: 90%;
+    }
+    .gform_wrapper li.gfield.gf_list_2col ul.gfield_checkbox li label,
+    .gform_wrapper li.gfield.gf_list_2col ul.gfield_radio li label,
+    .gform_wrapper li.gfield.gf_list_3col ul.gfield_checkbox li label,
+    .gform_wrapper li.gfield.gf_list_3col ul.gfield_radio li label,
+    .gform_wrapper li.gfield.gf_list_4col ul.gfield_checkbox li label,
+    .gform_wrapper li.gfield.gf_list_4col ul.gfield_radio li label {
+        max-width: 75%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        vertical-align: middle;
+    }
+    .gform_wrapper li.gfield.gf_list_4col ul.gfield_checkbox li,
+    .gform_wrapper li.gfield.gf_list_4col ul.gfield_radio li {
+        width: 25%;
+        display: -moz-inline-stack;
+        display: inline-block;
+        margin: 0;
+        padding-right: 16px;
+        min-height: 28px;
+        vertical-align: top;
+        font-size: 90%;
+    }
+    .gform_wrapper li.gfield.gf_list_5col ul.gfield_checkbox li,
+    .gform_wrapper li.gfield.gf_list_5col ul.gfield_radio li {
+        width: 20%;
+        display: -moz-inline-stack;
+        display: inline-block;
+        margin: 0;
+        padding-right: 16px;
+        min-height: 28px;
+        vertical-align: top;
+        font-size: 90%;
+    }
+    .gform_wrapper ul.gform_fields:not(.top_label) li.gf_list_2col_vertical label.gfield_label,
+    .gform_wrapper ul.gform_fields:not(.top_label) li.gfield.gf_list_2col label.gfield_label,
+    .gform_wrapper ul.gform_fields:not(.top_label) li.gfield.gf_list_3col label.gfield_label,
+    .gform_wrapper ul.gform_fields:not(.top_label) li.gfield.gf_list_4col label.gfield_label,
+    .gform_wrapper ul.gform_fields:not(.top_label) li.gfield.gf_list_5col label.gfield_label,
+    .gform_wrapper ul.gform_fields:not(.top_label) li.gfield.gf_list_inline label.gfield_label {
+        margin: 0 0 10px;
+    }
+    .gform_wrapper li.gf_list_2col_vertical .ginput_container_checkbox ul.gfield_checkbox,
+    .gform_wrapper li.gf_list_3col_vertical .ginput_container_checkbox ul.gfield_checkbox,
+    .gform_wrapper li.gf_list_4col_vertical .ginput_container_checkbox ul.gfield_checkbox,
+    .gform_wrapper li.gf_list_5col_vertical .ginput_container_checkbox ul.gfield_checkbox {
+        -webkit-column-gap: 16px;
+        -moz-column-gap: 16px;
+        column-gap: 16px;
+    }
+    .gform_wrapper li.gf_list_2col_vertical .ginput_container_checkbox ul.gfield_checkbox,
+    .gform_wrapper li.gf_list_2col_vertical .ginput_container_radio ul.gfield_radio {
+        width: calc(100% - 16px);
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+    .gform_wrapper li.gf_list_3col_vertical .ginput_container_checkbox ul.gfield_checkbox,
+    .gform_wrapper li.gf_list_3col_vertical .ginput_container_radio ul.gfield_radio {
+        width: calc(100% - 8px);
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+    .gform_wrapper li.gf_list_4col_vertical .ginput_container_checkbox ul.gfield_checkbox,
+    .gform_wrapper li.gf_list_4col_vertical .ginput_container_radio ul.gfield_radio {
+        width: calc(100% - 8px);
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+    .gform_wrapper li.gf_list_5col_vertical .ginput_container_checkbox ul.gfield_checkbox,
+    .gform_wrapper li.gf_list_5col_vertical .ginput_container_radio ul.gfield_radio {
+        width: calc(100% - 8px);
+        -webkit-column-count: 5;
+        -moz-column-count: 5;
+        column-count: 5;
+    }
+    .gform_wrapper li.gf_list_2col_vertical .ginput_container_checkbox ul.gfield_checkbox li label,
+    .gform_wrapper li.gf_list_2col_vertical .ginput_container_radio ul.gfield_radio li label,
+    .gform_wrapper li.gf_list_3col_vertical .ginput_container_checkbox ul.gfield_checkbox li label,
+    .gform_wrapper li.gf_list_3col_vertical .ginput_container_radio ul.gfield_radio li label,
+    .gform_wrapper li.gf_list_4col_vertical .ginput_container_checkbox ul.gfield_checkbox li label,
+    .gform_wrapper li.gf_list_4col_vertical .ginput_container_radio ul.gfield_radio li label,
+    .gform_wrapper li.gf_list_5col_vertical .ginput_container_checkbox ul.gfield_checkbox li label,
+    .gform_wrapper li.gf_list_5col_vertical .ginput_container_radio ul.gfield_radio li label {
+        max-width: 75%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}

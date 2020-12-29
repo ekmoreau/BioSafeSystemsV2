@@ -1,0 +1,119 @@
+.card {
+    ul {
+        margin-bottom: rem-calc(24);
+    }
+
+    li {
+        margin-bottom: rem-calc(16);
+
+        a {
+            line-height: 1.35;
+            transition: all 0.25s ease-in-out;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.card-section {
+    position: relative;
+
+    .button {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: $light-gray;
+        color: $bio-dark-blue;
+        padding: rem-calc(8 21);
+    }
+}
+
+.listing__title {
+    font-size: rem-calc(16);
+    font-weight: 500;
+    color: $bio-dark-blue;
+    display: block;
+
+    span {
+        font-size: rem-calc(12);
+        text-transform: uppercase;
+        opacity: 0.85;
+    }
+}
+
+.card--dark {
+    .card-divider {
+        background: $bio-dark-blue;
+    }
+
+    .preheader {
+        color: $bio-white;
+    }
+}
+
+.card--ghosted {
+    border: none;
+
+    .card-divider {
+        background: none;
+        padding: rem-calc(0 0 4 0);
+    }
+
+    .card-section {
+        padding: rem-calc(0 0 6 0);
+
+        &:before {
+            display: block;
+            background-color: $bio-teal;
+            width: 25%;
+            height: 3px;
+            content: '';
+            margin-bottom: rem-calc(16);
+        }
+    }
+}
+
+// .card--arrows {
+//     .listing__title {
+//         &:after {
+//             @include fa-regular;
+//             content: "\f178";
+//             margin-left: rem-calc(8);
+//             font-size: rem-calc(12);
+//         }
+//     }
+// }
+
+.card--docs,
+.card--research {
+    .listing__title {
+        &:before {
+            @include fa-regular;
+            content: '\f1c1';
+            margin-right: rem-calc(8);
+            font-size: rem-calc(12);
+            float: left;
+            clear: both;
+            line-height: 21px;
+            margin-bottom: rem-calc(6);
+        }
+    }
+}
+
+.card--docs {
+    .listing__title {
+        &:before {
+            content: '\f1c1';
+        }
+    }
+}
+
+.card--research {
+    .listing__title {
+        &:before {
+            content: '\f5db';
+        }
+    }
+}
