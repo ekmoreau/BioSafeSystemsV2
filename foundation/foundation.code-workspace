@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../../../../Local Sites/biosafe/app/public/wp-content/plugins/search-filter-pro"
 		}
 	],
 	"settings": {}
