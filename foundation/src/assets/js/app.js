@@ -18,6 +18,11 @@ import slick from "slick-carousel"
 import './lib/foundation-explicit-pieces';
 
 
+
+$(document).foundation();
+
+
+
 var slides = $('.slide');
 $(".slider--single").slick({
     autoplay: true,
@@ -78,4 +83,9 @@ $('.slider--3up').slick({dots: true,
     // });
 // });
 
-$(document).foundation();
+
+
+// $(".grid-container").on("click", function() {
+//     $(".accordion").foundation('up',$(".accordion-content"));
+//     return false;
+//   });

@@ -1,0 +1,15 @@
+.slide {
+    height: 100%;
+}
+.slick-slider,
+.slick-track,
+.slick-list {
+    height: 100%;
+}
+.slick-slide > div {
+    height: 100%;
+}
+.slider--3up .slide {
+    padding-left: 0;
+    padding-right: 1.5625rem;
+}

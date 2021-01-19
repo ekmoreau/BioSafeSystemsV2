@@ -19,9 +19,6 @@ sup, sub {
 .uppercase {
     text-transform: uppercase;
 }
-.lineheight--small {
-    line-height: 14px;
-}
 .small {
     font-size: 85% !important;
     line-height: 1.5;
@@ -72,22 +69,4 @@ sup, sub {
 
 .subheader {
     font-size: rem-calc(15);
-}
-
-@include breakpoint(large) {
-  .list--2col {
-      column-count: 2;
-  }
-  .list--3col {
-      column-count: 3;
-  }
-  .list--4col {
-      column-count: 4;
-  }
-  .list--small {
-    font-size: rem-calc(16);
-  }
-  .list--large {
-    font-size: rem-calc(21);
-  }
 }

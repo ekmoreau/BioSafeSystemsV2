@@ -19,3 +19,11 @@
         }
     }
 }
+@include breakpoint(large) {
+  .list--small {
+    font-size: rem-calc(16);
+  }
+  .list--large {
+    font-size: rem-calc(21);
+  }
+}

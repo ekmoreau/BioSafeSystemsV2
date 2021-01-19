@@ -64,10 +64,14 @@
 // @include motion-ui-animations;
 
 @import "global/global";
+@import "pages/news";
+@import "components/accordion/accordion";
 @import "components/aside/aside";
 @import "components/tooltip/tooltip";
 @import "components/hero/hero";
 @import "components/cards/cards";
+@import "components/searchandfilter/searchandfilter";
+@import "components/slider/slider";
 
 @import "vendor/font-awesome/fontawesome";
 @import "vendor/font-awesome/regular";
