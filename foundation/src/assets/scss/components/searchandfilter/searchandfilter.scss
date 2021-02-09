@@ -8,3 +8,30 @@
 .sf-field-submit {
     width: 90px;
 }
+
+#search-filter-form-3306 ul {
+    position: relative;
+    .sf-field-reset {
+        position: absolute;
+        width: auto !important;
+        right: 14px;
+        top: -45px;
+    }
+}
+#search-filter-form-3306 li {
+    float: left;
+    width: 33%;
+    &:nth-child(1) {
+        padding-right: 12px;
+    }
+    &:nth-child(2) {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    &:nth-child(3) {
+        padding-left: 12px;
+    }
+}
+#search-filter-form-3306 label {
+    width: 100%;
+}

@@ -6,16 +6,18 @@ $secondary-font-family: basic-sans, 'Helvetica Neue', Helvetica, Roboto, Arial, 
 a {
     transition: color 0.25s ease-in-out;
 }
-.block {
-    display: block !important;
-}
 sup, sub {
     font-size: 50%;
+}
+.screen-reader-text {
+    @extend .show-for-sr;
+}
+.block {
+    display: block !important;
 }
 .lowercase {
     text-transform: none;
 }
-
 .uppercase {
     text-transform: uppercase;
 }
