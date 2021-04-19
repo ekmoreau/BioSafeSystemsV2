@@ -62,8 +62,15 @@
 // Motion UI
 // @include motion-ui-transitions;
 // @include motion-ui-animations;
-
 @import "global/global";
+
+@import "vendor/font-awesome/fontawesome";
+@import "vendor/font-awesome/regular";
+@import "vendor/font-awesome/brands";
+@import "vendor/slick/slick-theme";
+@import "vendor/slick/slick";
+@import "vendor/aos/aos";
+
 @import "pages/news";
 @import "components/accordion/accordion";
 @import "components/aside/aside";
@@ -72,10 +79,3 @@
 @import "components/cards/cards";
 @import "components/searchandfilter/searchandfilter";
 @import "components/slider/slider";
-
-@import "vendor/font-awesome/fontawesome";
-@import "vendor/font-awesome/regular";
-@import "vendor/font-awesome/brands";
-@import "vendor/slick/slick-theme";
-@import "vendor/slick/slick";
-// @import "vendor/aos/aos";

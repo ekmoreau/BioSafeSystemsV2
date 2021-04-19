@@ -24,3 +24,17 @@ table {
     padding: 0;
     border: none;
 }
+
+// .dropdown-menu {
+//     .dropdown-pane {
+//         top: 0 !important;
+//         bottom: 0 !important;
+//     }
+// }
+
+
+.dropdown-menu {
+    .button.hover {
+        background-color: darken($bio-blue, 10%);
+    }
+}

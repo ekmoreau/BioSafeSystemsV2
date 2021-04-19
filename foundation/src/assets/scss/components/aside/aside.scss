@@ -162,7 +162,6 @@
     &.aside--left {
         .aside__callout {
             padding-right: rem-calc(45);
-            padding-left: 0;
 
             >.align-self-middle {
                 margin-left: auto;
@@ -174,7 +173,6 @@
         .aside__callout {
             order: 2;
             padding-left: rem-calc(45);
-            padding-right: 0;
         }
 
         .aside__media {
@@ -188,21 +186,10 @@
     }
 }
 
-@include breakpoint(xxxlarge) {
+@include breakpoint(xxlarge) {
     .aside--offset {
         .align-self-middle {
             padding: rem-calc(60);
-        }
-        &.aside--right {
-            .align-self-middle {
-                margin-left: -136px;
-            }
-        }
-
-        &.aside--left {
-            .align-self-middle {
-                margin-right: -136px;
-            }
         }
     }
 }
