@@ -1,6 +1,3 @@
-@import "mixins";
-@import "typography";
-@import "navigation";
 @import "layout";
 @import "buttons";
 @import "backgrounds";
@@ -37,4 +34,27 @@ table {
     .button.hover {
         background-color: darken($bio-blue, 10%);
     }
+}
+.dropdown-pane {
+    opacity: 0 !important;
+    transition: opacity 0.25s ease-in-out !important;
+    &.is-open {
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: block !important;
+    }
+}
+
+a.glink span {
+    font-size: rem-calc(16);
+}
+.glink > span::after {
+    content: '\f078';
+    @include fa-regular;
+    font-size: rem-calc(12);
+    margin-left: rem-calc(4);
+}
+.glink span:last-child {
+    display:none;
+    visibility: hidden;
 }

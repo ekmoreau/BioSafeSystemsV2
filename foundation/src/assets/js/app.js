@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import 'what-input';
-import slick from "slick-carousel"
+import slick from "slick-carousel";
 
 import AOS from "aos";
 
@@ -73,9 +73,9 @@ $(function () {
         duration: 650,
         once: true
     });
-    onElementHeightChange(document.body, function () {
-        AOS.refresh();
-    });
+    // onElementHeightChange(document.body, function () {
+    //     AOS.refresh();
+    // });
 });
 
 

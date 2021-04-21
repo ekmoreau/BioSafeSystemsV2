@@ -62,6 +62,10 @@
 // Motion UI
 // @include motion-ui-transitions;
 // @include motion-ui-animations;
+
+@import "global/mixins.scss";
+@import "global/typography.scss";
+@import "global/navigation.scss";
 @import "global/global";
 
 @import "vendor/font-awesome/fontawesome";
