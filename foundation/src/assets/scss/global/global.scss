@@ -58,3 +58,11 @@ a.glink span {
     display:none;
     visibility: hidden;
 }
+
+.preview-box {
+    .cell {
+        &:nth-child(1) {
+            
+        }
+    }
+}
