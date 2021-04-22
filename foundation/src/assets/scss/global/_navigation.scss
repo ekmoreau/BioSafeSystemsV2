@@ -8,10 +8,33 @@
         @include box-shadow;
         a:not(.button) {
             width: 100%;
-            // transition: all 0.25s ease-in-out;
+            transition: background-color 0.25s ease, padding 0.25s ease;
             &:hover {
                 padding-left: rem-calc(24);
                 background-color: $light-gray;
+                color: $bio-blue;
+                cursor: pointer;
+            }
+        }
+    }
+    > .is-dropdown-submenu-parent {
+        > a {
+                color: $bio-blue;
+                padding-right: 32px !important;
+            &:after {
+                @include fa-regular;
+                content: '\f107';
+                font-size: rem-calc(14);
+                top: 34px;
+                right: 16px;
+                transition: transform 0.2s ease-in-out;
+            }
+        }
+        &.is-active {
+            > a {
+                &:after {
+                    transform: rotate(180deg);
+                }
             }
         }
     }
@@ -27,12 +50,12 @@
     align-content: stretch;
     align-items: flex-start;
     @include box-shadow--small;
-    .dropdown.menu>li>a {
+    
+    .dropdown.menu > li > a {
         padding: 1.45rem 0.7rem;
     }
     &.is-stuck {
         z-index: 915;
-        // transition: all 0.25s ease-in-out;
         padding: 0;
         @include box-shadow;
         background: rgb(7, 62, 115);
@@ -48,21 +71,14 @@
             height: 40px;
             margin-top: rem-calc(11);
         }
-
         .dropdown.menu {
             > li {
                 > a {
                     color: $white;
-                    // transition: all 0.25s ease-in-out;
                     &:hover {
                         color: $white;
                         background-color: $bio-cobalt;
                     }
-                }
-            }
-            .is-active {
-                > a {
-                    background-color: $bio-cobalt;
                 }
             }
         }
@@ -99,25 +115,7 @@
     align-self: auto;
 }
 
-.is-dropdown-submenu-parent {
-    >a {
-        padding-right: 32px !important;
-        &:after {
-            @include fa-regular;
-            content: "\f107";
-            font-size: rem-calc(14);
-            top: 34px;
-            right: 16px;
-        }
-    }
-    &.is-active {
-        >a {
-            &:after {
-                content: "\f068";
-            }
-        }
-    }
-}
+
 .logo-link {
     position: relative;
     display: block;
@@ -133,26 +131,23 @@
         height: 21px;
     }
 }
+
 .top-bar {
 text-transform: uppercase;
 padding: 0;
 font-size: rem-calc(12);
 justify-content: flex-end;
 font-family: $secondary-font-family;
-a {
-    font-size: rem-calc(12);
-    font-weight: 600;
-    color: $gray;
-    &:hover {
+    a {
+        font-size: rem-calc(12);
+        font-weight: 600;
+        color: $gray;
+        &:hover {
+            color: $white;
+        }
+    }
+    .button {
+        margin-right: -1rem;
         color: $white;
     }
-}
-.button {
-    margin-right: -1rem;
-    color: $white;
-}
-.far {
-    font-size: rem-calc(10);
-    margin-left: rem-calc(3);
-}
 }

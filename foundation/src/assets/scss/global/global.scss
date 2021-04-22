@@ -6,7 +6,10 @@
 @import "forms";
 @import "list";
 @import "menu";
-
+::selection {
+    background: #0055b8;
+    color: #fefefe;
+}
 table {
     font-size: 80%;
 }
@@ -18,17 +21,8 @@ table {
     box-shadow: none;
 }
 .reveal {
-    padding: 0;
     border: none;
 }
-
-// .dropdown-menu {
-//     .dropdown-pane {
-//         top: 0 !important;
-//         bottom: 0 !important;
-//     }
-// }
-
 
 .dropdown-menu {
     .button.hover {
@@ -57,12 +51,4 @@ a.glink span {
 .glink span:last-child {
     display:none;
     visibility: hidden;
-}
-
-.preview-box {
-    .cell {
-        &:nth-child(1) {
-            
-        }
-    }
 }

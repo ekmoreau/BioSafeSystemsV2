@@ -90,7 +90,6 @@
       <li><a href="#">Videos</a></li>
       <li><a href="#">Literature</a></li>
       <li><a href="#">Contact Us</a></li>
-      <li><a data-toggle="siteSearch">Search <i class="far fa-fw fa-search" aria-hidden="true"></i> <span class="show-for-sr">Search BioSafeSystems.com</span></a></li>
     </ul>
   </nav>
   
@@ -102,7 +101,7 @@
           <a href="/" class="logo-link" aria-label="BioSafe Systems Dot Com Homepage">Simply Sustainable. Always Effective.</a>
         </div>
         <nav class="header__navigation" role="navigation" aria-label="Main Navigation">
-          <ul id="primaryNavigation" class="dropdown menu align-right show-for-xlarge" data-dropdown-menu>
+          <ul id="primaryNavigation" class="dropdown menu align-right show-for-xlarge" data-dropdown-menu data-hover-delay="0">
             <li>
               <a href="/products/">Products</a>
               <ul class="menu menu--mega" style="width:640px;">
@@ -139,7 +138,13 @@
                 <li><a href="/industries/agriculture/">Agriculture</a></li>
                 <li><a href="/industries/agriculture/">Animal Health</a></li>
                 <li><a href="/industries/food-safety/">Food Safety</a></li>
-                <li><a href="/industries/lake-pond-municipal/">Lake, Pond & Municipal</a></li>
+                <li><a href="/industries/lake-pond-municipal/">Lake, Pond & Municipal</a>
+                  <ul class="menu">
+                    <li><a href="#">Item 01</a></li>
+                    <li><a href="#">Item 02</a></li>
+                    <li><a href="#">Item 03</a></li>
+                  </ul>
+                </li>
                 <li><a href="/industries/greenhouse-nursery/">Greenhouse &amp; Nursery</a></li>
                 <li><a href="/industries/lawn-care-arborists/">Turf &amp; Landscape</a></li>
                 <li><a href="/industries/meat-poultry-seafood/">Meat, Poultry &amp; Seafood</a></li>
@@ -152,27 +157,39 @@
             <li><a href="#">Labels &amp; SDS</a></li>
             <li><a href="#">Where to Buy</a></li>
             <li><a href="#">Contact Us</a></li>
+            <li><a href="#" data-open="modal01"><i class="far fa-search"></i></a></li>
           </ul>
           <button type="button" class="button hollow mb--none button--toggle float-right hide-for-xlarge" data-toggle="offCanvas"><span aria-hidden="true"><i class="far fa-bars"></i></span> Menu</button>
         </nav>
       </div>
     </div>
   </header>
-
-  <form id="siteSearch" class="siteSearch" data-toggler=".expanded">
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="cell">
-          <label><span class="show-for-sr">Search BioSafeSystems.com</span>
-            <input class="mt--xsmall mb--xsmall" type="text" placeholder="Search BioSafeSystems.com">
-          </label>
-        </div>
-      </div>
-    </div>
-  </form>
   
   {{> body}}
   
+  <div class="reveal full on--dark-blue scheme--light" id="modal01" aria-labelledby="searchModal" data-reveal>
+        <div class="align-self-middle">
+          <div class="grid-container align-middle">
+            <div class="grid-x">
+              <div class="cell">
+                <h1 id="searchModal" class="header header--xsmall">Search BioSafeSystems.com</h1>
+                <form role="search" method="get" class="search-form" action="https://biosafesystems.com/">
+                  <div class="input-group">
+                    <span class="show-for-sr">Search for:</span>
+                    <input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:">
+                    <div class="input-group-button">
+                      <input type="submit" class="button bio-white" value="Search">
+                    </div>
+                  </div>
+                </form>
+                <button class="close-button" data-close aria-label="Close Accessible Modal" type="button">
+                  <i class="far fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
 </div>
 
 <script src="{{root}}assets/js/app.js"></script>
