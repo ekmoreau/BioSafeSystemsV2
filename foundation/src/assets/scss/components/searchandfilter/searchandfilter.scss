@@ -1,37 +1,26 @@
-.sf-field-reset,
-.sf-field-submit {
-    float: right;
-}
-.sf-field-reset {
-    width: 150px;
-}
-.sf-field-submit {
-    width: 90px;
-}
-
-#search-filter-form-3306 ul {
-    position: relative;
-    .sf-field-reset {
-        position: absolute;
-        width: auto !important;
-        right: 14px;
-        top: -45px;
-    }
-}
 #search-filter-form-3306 li {
     float: left;
-    width: 33%;
+    width: 30%;
     &:nth-child(1) {
         padding-right: 12px;
     }
-    &:nth-child(2) {
+    &:nth-child(2),
+    &:nth-child(3) {
         padding-left: 12px;
         padding-right: 12px;
     }
-    &:nth-child(3) {
-        padding-left: 12px;
+    &:nth-child(4) {
+        width: 10%;
     }
 }
 #search-filter-form-3306 label {
     width: 100%;
+    font-weight: normal;
+}
+.search-filter-reset {
+    @extend .button;
+    @extend .expanded;
+    @extend .hollow;
+    height: 60px;
+    margin-bottom: 0;
 }

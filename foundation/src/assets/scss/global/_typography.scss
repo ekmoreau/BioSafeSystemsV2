@@ -58,9 +58,7 @@ sup, sub {
 
 .preheader,
 .subheader {
-    @extend .uppercase;
     font-family: $secondary-font-family;
-    font-weight: 600;
     display: inline-block;
 }
 
