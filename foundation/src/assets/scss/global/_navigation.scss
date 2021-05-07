@@ -19,7 +19,6 @@
     }
     > .is-dropdown-submenu-parent {
         > a {
-                color: $bio-blue;
                 padding-right: 32px !important;
             &:after {
                 @include fa-regular;
@@ -85,7 +84,7 @@
         .is-dropdown-submenu-parent {
             > a {
                 &:after {
-                    top: 26px;
+                    top: 26px !important;
                 }
             }
         }
