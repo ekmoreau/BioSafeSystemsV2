@@ -1,7 +1,8 @@
 .menu {
-    &.small {
+    &.menu--small {
         li a {
-            padding: .35rem 1rem;
+            font-size: rem-calc(16);
+            padding: .35rem 0;
         }
     }
 }

@@ -1,0 +1,27 @@
+.breadcrumbs {
+    background-color: $light-gray;
+    color: $white;
+    text-transform: uppercase;
+    font-size: rem-calc(14);
+    letter-spacing: rem-calc(0.65);
+    padding: rem-calc(9 12 6);
+}
+
+.breadcrumbs :not(span) {
+    padding: rem-calc(0 3);
+}
+
+.breadcrumbs,
+.breadcrumbs a {
+    color: #3e6182;
+}
+
+.breadcrumbs a {
+    font-weight: 600;
+}
+
+.breadcrumb_last {
+    color: $bio-dark-blue;
+    letter-spacing: rem-calc(1.25);
+    margin-left: rem-calc(3);
+}
